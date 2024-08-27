@@ -21,10 +21,15 @@ export const ArticleCard = ({ className }: ArticleCardProps) => {
                 />
             </div>
             <div className={styles.contentSection}>
-                <h4 className={themeStyles.cardTitle}>Article Name</h4>
-                <p className={styles.paragraph}>
-                    Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit tortor eu.
-                </p>
+                <div>
+                    <h4 className={themeStyles.cardTitle}>Article Name</h4>
+                    <p className={styles.paragraph}>
+                        Why should user researchers avoid questions like “Do you like it?” Why does
+                        this question or one of its close siblings keep on making an appearance?
+                        What are the biases to be aware of during user research? Why are open-ended
+                        questions better? Let’s talk about it.
+                    </p>
+                </div>
                 <button className={themeStyles.button}>Button</button>
             </div>
         </div>

@@ -6,7 +6,7 @@ export default createBoard({
     Board: () => <ArticleCard />,
     isSnippet: true,
     environmentProps: {
-        windowWidth: 406,
+        windowWidth: 318,
         windowBackgroundColor: '#fbf9f9',
     },
 });
