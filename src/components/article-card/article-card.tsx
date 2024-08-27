@@ -4,33 +4,33 @@ import themeStyles from '../../styles/theme.module.scss';
 
 export interface ArticleCardProps {
     className?: string;
+    image:string;
+    title: string;
+    paragraph: string;
+    button: string;
 }
 
 /**
  * This component was created using Codux's Default new component template.
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
-export const ArticleCard = ({ className }: ArticleCardProps) => {
+export const ArticleCard = ({ className,image, title, paragraph, button }: ArticleCardProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles.imageBox}>
                 <img
-                    src="https://images.unsplash.com/photo-1723347130196-8d31b6ac01fd?q=80&amp;w=3432&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src={image}
                     alt=""
                     className={styles.img1}
                 />
             </div>
             <div className={styles.contentSection}>
                 <div>
-                    <h4 className={themeStyles.cardTitle}>You really like this, don’t you?</h4>
-                    <p className={styles.paragraph}>
-                        Why should user researchers avoid questions like “Do you like it?” Why does
-                        this question or one of its close siblings keep on making an appearance?
-                        What are the biases to be aware of during user research? Why are open-ended
-                        questions better? Let’s talk about it.
+                    <h4 className={themeStyles.cardTitle}>{title}</h4>
+                    <p className={styles.paragraph}>{paragraph}
                     </p>
                 </div>
-                <button className={themeStyles.button}>Read More</button>
+                <button className={themeStyles.button}>{button}</button>
             </div>
         </div>
     );
