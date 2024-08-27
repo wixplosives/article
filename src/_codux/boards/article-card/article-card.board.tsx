@@ -13,7 +13,7 @@ export default createBoard({
     ),
     isSnippet: true,
     environmentProps: {
-        windowWidth: 476,
+        windowWidth: 560,
         windowBackgroundColor: '#fbf9f9',
     },
 });

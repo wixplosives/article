@@ -4,7 +4,7 @@ import themeStyles from '../../styles/theme.module.scss';
 
 export interface ArticleCardProps {
     className?: string;
-    image:string;
+    image: string;
     title: string;
     paragraph: string;
     button: string;
@@ -14,21 +14,14 @@ export interface ArticleCardProps {
  * This component was created using Codux's Default new component template.
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
-export const ArticleCard = ({ className,image, title, paragraph, button }: ArticleCardProps) => {
+export const ArticleCard = ({ className, image, title, paragraph, button }: ArticleCardProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <div className={styles.imageBox}>
-                <img
-                    src={image}
-                    alt=""
-                    className={styles.img1}
-                />
-            </div>
+            <img src={image} alt="" className={styles.image} />
             <div className={styles.contentSection}>
                 <div>
                     <h4 className={themeStyles.cardTitle}>{title}</h4>
-                    <p className={styles.paragraph}>{paragraph}
-                    </p>
+                    <p className={styles.paragraph}>{paragraph}</p>
                 </div>
                 <button className={themeStyles.button}>{button}</button>
             </div>
