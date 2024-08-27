@@ -22,7 +22,7 @@ export const ArticleCard = ({ className }: ArticleCardProps) => {
             </div>
             <div className={styles.contentSection}>
                 <div>
-                    <h4 className={themeStyles.cardTitle}>Article Name</h4>
+                    <h4 className={themeStyles.cardTitle}>You really like this, don’t you?</h4>
                     <p className={styles.paragraph}>
                         Why should user researchers avoid questions like “Do you like it?” Why does
                         this question or one of its close siblings keep on making an appearance?
@@ -30,7 +30,7 @@ export const ArticleCard = ({ className }: ArticleCardProps) => {
                         questions better? Let’s talk about it.
                     </p>
                 </div>
-                <button className={themeStyles.button}>Button</button>
+                <button className={themeStyles.button}>Read More</button>
             </div>
         </div>
     );
