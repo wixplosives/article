@@ -1,9 +1,8 @@
 // colors
 $white: #ffffff;
 $black: #000000;
-$charcoal-black: #282B2D;
-$snow-white: #F5F5F5;
-
+$charcoal-black: #282b2d;
+$snow-white: #f5f5f5;
 
 //fonts
 $my-prettyfont: 'DM Sans', sans-serif;
@@ -11,16 +10,23 @@ $my-prettyfont: 'DM Sans', sans-serif;
 //text
 $small-font: 200 1rem/1.4 $my-prettyfont;
 $large-font: 700 2rem/1.2 $my-prettyfont;
-$title-font: 300 4rem/1.4 $my-prettyfont;
-$paragraph-font: 300 1.3rem/1.3 $my-prettyfont;
-$button-font: 400 1rem/1.3 $my-prettyfont;
+$title-font: 700 1rem/1.4 $my-prettyfont;
+$paragraph-font: 200 0.9rem/1.3 $my-prettyfont;
+$button-font: 400 0.9rem/1.3 $my-prettyfont;
 
 $mobile-width: 600px;
 
+//buttons
+.button {
+    font: $button-font;
+    text-align: center;
+    background-color: $black;
+    color: $white;
+    border-radius: 9999px;
+    align-self: start;
+    padding:8px 12px 8px 12px;
+}
 
-
-
-
-
-
-
+.cardTitle {
+    font: $title-font;
+}

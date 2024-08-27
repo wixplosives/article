@@ -1,0 +1,44 @@
+@import '@styles/theme.module.scss';
+.root {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    padding: 18px;
+    row-gap: 12px;
+    height: 100%;
+    background-color: $white;
+    box-shadow: 4px 4px 34px 7px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 4px 4px 34px 7px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 4px 34px 7px rgba(0, 0, 0, 0.27);
+    column-gap: 12px;
+}
+
+.contentSection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.img1 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.paragraph {
+    font: $paragraph-font;
+}
+.imageBox {
+    max-width: 30vw;
+    max-height: 119vw;
+}
+
+@media (width <= 478px) {
+    .root {
+        display: flex;
+        flex-direction: column;
+    }
+    .imageBox {
+        max-width: 100vw;
+        max-height: 119vw;
+    }
+}
