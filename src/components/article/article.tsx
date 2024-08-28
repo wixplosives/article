@@ -12,7 +12,7 @@ export interface ArticleProps {
 
 export const Article = ({ className }: ArticleProps) => {
     return (
-        <div className={classNames(className, styles.div1)}>
+        <div className={classNames(className, styles.main)}>
             <div className={styles.root}>
                 <div>
                     <ArticleCard

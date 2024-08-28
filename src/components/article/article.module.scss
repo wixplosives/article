@@ -12,9 +12,30 @@
     width: 100%;
     height: 100%;
 }
-.div1 {
+.main {
     display: flex;
     width: 100%;
     justify-content: center;
-    
+}
+
+@media (width <= 793px) {
+    .root {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        grid-auto-flow: row;
+        max-width: 60vw;
+    }
+}
+
+@media (width <= 1440px) {
+    .root {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        grid-auto-flow: row;
+        max-width: 60vw;
+    }
 }
